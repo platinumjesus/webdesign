@@ -1,27 +1,29 @@
-# HTML (Content Structure)
+# Chapter 1: Introduction
+
+## How the web works
+
+## Text editor
+Get the Atom Text editor here: http://atom.io
+
+## HTML (Content Structure)
 
 Basic structure of a tag: `<tag attribute="value"> content </tag>`
 
-## Page structure
+### Page structure
 
 ```
 <!DOCTYPE html>
 <html>
   <head>
-    ...
     meta information about the page
-    ...
   </head>
   <body>
-    ...
     actual page content
-    ...
   </body>
 </html>
 ```
 
-
-## Content Tags
+### Content Tags
 Tags used in the `<body>` to describe the visible element of the page.
 
 * Paragraph `<p> text </p>`
@@ -56,7 +58,18 @@ Tags used in the `<body>` to describe the visible element of the page.
   </div>
   ```
 
-## Meta Tags
+#### Comments
+To make HTML code disappaear from the page, you can just add `<!--` and `-->` before and after it.
+example:
+```
+<!--
+  <p> This won't be on the page </p>
+-->
+<p> This will! </p>
+```
+
+
+### Meta Tags
 Tags used in the `<header>` containing information about the page.
 
 * Title tag `<title> My Site's Title </title>`
@@ -64,7 +77,7 @@ Tags used in the `<header>` containing information about the page.
 * Meta tag (general information; example: Meta tag that enables special characters on the page)  `<meta charset="UTF-8">`
 
 
-# CSS (Styles)
+## CSS (Styles)
 
 Basic structure of a stylesheet:
 
@@ -89,7 +102,7 @@ h1 {
 }
 ```
 
-## Basic visual style
+### Basic visual style
 
 property | explanation | example
 ---------|-------------|--------
@@ -103,7 +116,7 @@ text-align | Text alignment (left, right, center or justify) | `text-align: cent
 text-decoration | Underline/strikethrough style | `text-decoration: underline`
 opacity | Opacity of the element (0 = invisible, 1 = fully visible) | `opacity: 0.7`
 
-## Box Model
+### Box Model
 
 property | explanation | example
 ---------|-------------|--------
@@ -112,7 +125,7 @@ padding | The space between the text or content inside an element and its border
 margin | The space between the border of the element and the next adjacent element. Same syntax as padding. | `margin: 10px 20px 5px 15px`
 border | Style of the element's border | `border: 2px solid green`
 
-![Box Model Diagram](img1/box.svg)
+![Box Model Diagram](img1/box.png)
 
 **Note:** To simplify working with the box model, include the following code at the beginning of your CSS. It makes the width and height properties work independently of padding and border.
 
@@ -123,7 +136,7 @@ border | Style of the element's border | `border: 2px solid green`
 }
 ```
 
-## Units
+### Units
 
 unit | explanation | example
 -----|-------------|--------
@@ -132,7 +145,7 @@ unit | explanation | example
 **em** | x times the parent element's font size in pixels | `font-size: 1.5em` (equivalent to  `font-size: 24px` if the parent's font size is 16px)
 **rem** | x times the root (`<html>`) element's font size in pixels | `margin: 2rem` (equivalent to  `margin: 32px` if the root's font size is 16px)
 
-## Color formats
+### Color formats
 
 format | example | explanation
 -------|---------|------------
@@ -140,13 +153,3 @@ built-in colors | `red` | Browsers have a few basic colors built in, you can sim
 Hexadecimal | `#ff00ba`  | Describes the RGB value as 3 consecutive hexadecimal numbers (#rrggbb). In this case `ff` is the red value, `00` green, and `ba` blue.
 RGB | `rgb(34, 12, 64)` | A different way of writing RGB colors, with decimal numbers (0...255) for red, green and blue instead of hex numbers.
 RGBA | `rgba(34, 12, 64, 0.3)` | Exactly the same as the previous, but additionally, the opacity of the color (0...1) can be defined with the last parameter.
-
-# Resources
-
-[Stackoverflow](http://stackoverflow.com) is a question-and-answer community for developers. Most of the problems you'll encounter have probably been answered there already.
-
-[The Mozilla Developer Network](http://developer.mozilla.org) is a wiki-like site with very thorough documentation on everything we're covering here.
-
-[CSS-Tricks](http://css-tricks.com) is a website with articles, tips and guides on web design and various related topics.
-
-[Codecademy](http://codecademy.com) is an educational site with great interactive development courses.
