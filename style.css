@@ -72,6 +72,10 @@ a:focus {
 .lesson-title a {
   box-shadow: 0 3px 0;
 }
+input {
+  -webkit-appearance: none;
+  background-image: none;
+}
 
 strong {
   font-weight: 500;
