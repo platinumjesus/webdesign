@@ -9,20 +9,38 @@ body {
   padding: 0;
 }
 body {
+  width: 100%;
 	font-family: "PT Serif", Georgia, serif;
 	font-size: 16px;
 	line-height: 1.6;
 	color: #fff;
 	background-color: #004CBF;
+
+  background-image: -moz-linear-gradient(top, rgba(0,76,191,0.4) 0, rgba(0,76,191,1) 12em), url(img/bg.jpg);
+  background-image: -webkit-linear-gradient(top, rgba(0,76,191,0.4) 0, rgba(0,76,191,1) 12em), url(img/bg.png);
+  background-image: linear-gradient(top bottom, rgba(0,76,191,0.4) 0, rgba(0,76,191,1) 12em), url(img/bg.jpg);
+  background-size: contain;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+@media screen and (min-width: 390px) {
+  body {
+    background-image: -moz-linear-gradient(top, rgba(0,76,191,0.4) 0, rgba(0,76,191,1) 16em), url(img/bg.jpg);
+    background-image: linear-gradient(top bottom, rgba(0,76,191,0.4) 0, rgba(0,76,191,1) 16em), url(img/bg.jpg);
+  }
 }
 @media screen and (min-width: 600px) {
   body {
     font-size: 18px;
+    background-image: -moz-linear-gradient(top, rgba(0,76,191,0.4) 0, rgba(0,76,191,1) 20em), url(img/bg.jpg);
+    background-image: linear-gradient(top bottom, rgba(0,76,191,0.4) 0, rgba(0,76,191,1) 20em), url(img/bg.jpg);
   }
 }
 @media screen and (min-width: 900px) {
   body {
     font-size: 20px;
+    background-image: -moz-linear-gradient(top, rgba(0,76,191,0.4) 0, rgba(0,76,191,1) 25em), url(img/bg.jpg);
+    background-image: linear-gradient(top bottom, rgba(0,76,191,0.4) 0, rgba(0,76,191,1) 25em), url(img/bg.jpg);
   }
 }
 @media screen and (min-width: 1800px) {
@@ -31,6 +49,8 @@ body {
   }
 }
 h1, h2, h3,
+input,
+button,
 .intro-big,
 .lesson-info {
   font-family: "Karla", "Helvetica", "sans-serif";
@@ -139,6 +159,72 @@ body {
 .coming-soon {
   margin: 3em 0;
   font-style: italic;
+}
+
+/* EMAIL */
+.widget-container {
+  margin-bottom: 3em;
+}
+@media screen and (min-width: 600px) {
+  .widget-container {
+    margin-bottom: 5em;
+  }
+}
+.singup-label {
+  display: block;
+}
+.widget > form > label > span {
+  display: none;
+}
+.email-input, .signup-button,
+.widget input[type="email"], .widget input[type="submit"] {
+  display: block;
+  width: 100%;
+  margin: 1em 0;
+  padding: 1em 1.2em;
+  border: 0;
+  font-size: 1em;
+  border-radius: 0.2em;
+}
+.email-input,
+.widget input[type="email"] {
+  background-color: #fff;
+}
+.singup-button,
+.widget input[type="submit"] {
+  color: #fff;
+  background-color: #00285d;
+  cursor: pointer;
+}
+.signup-small {
+  margin: 1em 0;
+  line-height: 1.1em;
+}
+@media screen and (min-width: 500px) {
+  .widget label {
+    display: inline !important;
+  }
+  .email-input,
+  .widget input[type="email"] {
+    display: inline-block;
+    width: 60%;
+    margin-right: 2%;
+  }
+  .signup-button,
+  .widget input[type="submit"] {
+    display: inline-block;
+    width: 30%;
+  }
+}
+form {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.widget .error {
+  padding: 1em 1.2em !important;
+  background-color: #ca3d26;
+  color: #fff !important;
+  border-radius: 0.2em;
 }
 
 .centered {
