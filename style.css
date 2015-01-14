@@ -220,11 +220,20 @@ form {
   margin: 0 !important;
   padding: 0 !important;
 }
-.widget .error {
+.widget .error,
+.widget .success {
   padding: 1em 1.2em !important;
-  background-color: #ca3d26;
+  width: intrinsic;
+  width: -moz-max-content;
+  width: -webkit-max-content;
   color: #fff !important;
   border-radius: 0.2em;
+}
+.widget .error {
+  background-color: #ca3d26;
+}
+.widget .success {
+  background-color: #2690CA;
 }
 
 .centered {
