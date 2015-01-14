@@ -222,10 +222,8 @@ form {
 }
 .widget .error,
 .widget .success {
+  display: table;
   padding: 1em 1.2em !important;
-  width: intrinsic;
-  width: -moz-max-content;
-  width: -webkit-max-content;
   color: #fff !important;
   border-radius: 0.2em;
 }
