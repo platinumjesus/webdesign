@@ -3,7 +3,7 @@
 ## How the web works
 
 ## Text editor
-Get the Atom Text editor here: http://atom.io
+Get the Atom text editor here: http://atom.io
 
 ## HTML (Content Structure)
 
@@ -35,7 +35,6 @@ Tags used in the `<body>` to describe the visible element of the page.
   <h6> sixth-level header </h6>
 
   ```
-* Link `<a href="http://url.com"> visible text </a>`
 * Unordered list
   ```
   <ul>
@@ -51,12 +50,6 @@ Tags used in the `<body>` to describe the visible element of the page.
   </ol>
   ```
 * Image `<img src="http://url.com/image.png">`
-* Divider (Container for other things)
-  ```
-  <div>
-    ...
-  </div>
-  ```
 
 #### Comments
 To make HTML code disappaear from the page, you can just add `<!--` and `-->` before and after it.
