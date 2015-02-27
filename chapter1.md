@@ -1,7 +1,5 @@
 # Chapter 1: Introduction
 
-## How the web works
-
 ## Text editor
 Get the Atom text editor here: http://atom.io
 

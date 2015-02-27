@@ -1,6 +1,13 @@
 # Chapter 2: Layout
 
-## Recap of last week's lesson
+## New tools
+
+Install [Firefox Developer Edition](https://www.mozilla.org/en-US/firefox/developer/).
+
+Open the Atom settings, go to "packages" and install these packages:
+* HTML Lint
+* Color Picker
+* Hover Color
 
 ## Gotchas
 Some tips to avoid common problems we encoutered last time:
@@ -130,3 +137,18 @@ value | explanation
 `display: block` | Element does not flow (displayed in a new line); Width, height and margins can be set freely
 `display: inline-block` | Element flows; Width, height and margins can be set freely
 `display: flex` | Magic rainbow unicorns! (more about it later)
+
+### Position
+
+value | explanation
+---------|---------
+`position: static` |
+`position: absolute` |
+`position: relative` |
+`position: fixed` |
+`position: sticky` |
+
+### Float
+
+
+## Page structure
