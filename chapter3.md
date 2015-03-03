@@ -2,7 +2,7 @@
 
 To publish your page, we'll use Github pages.
 
-### [Create a Github account](github.com)
+### [Create a Github account](http://github.com)
 
 Avoid spaces and uppercase characters. Choose something short and simple with no spaces and uppercase characters, e.g. `jsmith` if your name is John Smith.
 
