@@ -9,7 +9,7 @@ Lecture notes and other resources for the Web Design Workshop at unibz.
 
 [Chapter 2: Layout](chapter2.md)
 
-[Chapter 2: Create a Github Page](chapter3.md)
+[Chapter 3: Create a Github Page](chapter3.md)
 
 
 ## Online Resources
